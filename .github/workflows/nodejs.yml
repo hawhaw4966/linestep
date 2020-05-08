@@ -5,9 +5,9 @@ on:
   #   branches: [ master ]
   #   # プッシュ時に動作する
  schedule:
-  - cron:  '*/5 14-20 * * *'
+  - cron:  '*/5 * * * * *'
   # 5分ごと # ここだけ変更
-  #14時から20時まで　　https://www.yoheim.net/blog.php?q=20190902
+  #14時から20時までhttps://www.yoheim.net/blog.php?q=20190902
 
 jobs:
   build:
