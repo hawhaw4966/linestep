@@ -17,25 +17,14 @@ let config = {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Authorization': 'Bearer ' + LINE_NOTIFY_TOKEN
     },
-    data: ''
+    data: qs.stringify({
+        message: 'ProtoOut Studioからの通知だよー！',
+    })
 }
 
 async function getRequest() {
 
   ////// LINE Notify に送る ////////////////////////
-  let foxResponse;
-  try {
-    foxResponse = await axios.get(`https://randomfox.ca/floof/`);
-    console.log(foxResponse.data.image);
-    config.data = qs.stringify({
-        message: 'ProtoOut Studioからの通知だよー！GitHub Actionsだよー！',
-        imageThumbnail: foxResponse.data.image,
-        imageFullsize: foxResponse.data.image,
-    })
-
-  } catch (error) {
-    console.error(error);
-  }
 
   try {
     const responseLINENotify = await axios.request(config);
