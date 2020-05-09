@@ -1,12 +1,12 @@
 name: LINE notify
 
-on:
-  push:
-    branches: [ master ]
-    # プッシュ時に動作する
 # on:
-#   schedule:
-#     - cron: "*/5 * * * *"
+#   push:
+#     branches: [ master ]
+#     # プッシュ時に動作する
+on:
+  schedule:
+    - cron: "*/10 16-20 * * *"
 
   # 5分ごと # ここだけ変更
   #14時から20時までhttps://www.yoheim.net/blog.php?q=20190902
