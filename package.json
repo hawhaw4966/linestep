@@ -19,5 +19,9 @@
   "homepage": "https://github.com/hawhaw4966/linestep#readme",
   "dependencies": {
     "axios": "^0.19.2"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {}
 }
