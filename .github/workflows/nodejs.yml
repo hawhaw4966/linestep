@@ -4,6 +4,7 @@ name: LINE notify
 #   push:
 #     branches: [ master ]
 #     # プッシュ時に動作する
+
 on:
   schedule:
     - cron: "*/5 * * * *"
